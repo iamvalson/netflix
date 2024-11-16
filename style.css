@@ -1,0 +1,144 @@
+@font-face {
+    font-family: tiff;
+    src: url(/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+    font-family: tiff, sans-serif;
+    background: url(/background_image.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    /* width: 100%; */
+    z-index: 1;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#logo{
+    width: 100px;
+}
+
+.sign-in{
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.h1 h1{
+    color: #fff;
+    width: 90vw;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.cost p{
+    color: #fff;
+    margin: 0;
+}
+
+.mem p{
+    color: #fff;
+    width: 80vw;
+}
+
+.email input{
+    width: 70vw;
+    padding: 12px 9px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid #333;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.email a{
+    background-color: red;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 120px;
+}
+
+@media (min-width: 768px){
+    header{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    #logo{
+        width: 150px;
+    }
+
+    .sign-in{
+        font-size: 20px;
+    }
+
+    .h1 h1{
+        font-size: 60px;
+        width: 80vw;
+    }
+
+    .cost p{
+        font-size: 20px;
+    }
+
+    .mem p{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px){
+    .h1 h1{
+        font-size: 60px;
+        width: 39vw;
+    }
+
+    .email{
+        flex-direction: row;
+    }
+
+    .email input{
+        width: 20vw;
+        font-size: 20px;
+        padding: 20px 25px;
+    }
+
+    .email a{
+        font-size: 20px;
+        width: 140px;
+        padding: 19px 25px;
+    }
+}
